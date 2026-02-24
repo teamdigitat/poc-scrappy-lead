@@ -1,0 +1,45 @@
+# =========================
+# Node Modules
+# =========================
+node_modules/
+
+# =========================
+# Environment Files
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# Logs
+# =========================
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+*.log
+
+# =========================
+# Chrome Debug Profiles
+# =========================
+chrome-profile*
+manual-profile-test
+scrapyleads-chrome-profile
+
+# =========================
+# Temp Files
+# =========================
+tmp/
+temp/
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# IDE Files
+# =========================
+.vscode/
+.idea/

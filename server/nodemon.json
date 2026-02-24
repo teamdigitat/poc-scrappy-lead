@@ -1,0 +1,8 @@
+{
+	"ignore": [
+		"chrome-profile*",
+		"chrome-profile-*",
+		"manual-profile-test",
+		"node_modules/*"
+	]
+}
