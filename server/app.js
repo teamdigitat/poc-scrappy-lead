@@ -3,12 +3,14 @@ const express = require("express");
 const cors = require("cors");
 
 const systemRoutes = require("./routes/system.routes");
+const debugRoutes = require("./routes/debug.routes");
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 
+app.use("/api/debug", debugRoutes);
 app.use("/api/system", systemRoutes);
 
 app.get("/", (req, res) => {
