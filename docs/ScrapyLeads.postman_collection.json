@@ -1,0 +1,764 @@
+{
+  "info": {
+    "_postman_id": "7b21e6a3-6180-4b6c-8087-00e7bf251ddf",
+    "name": "ScrapyLeads",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "34579489"
+  },
+  "item": [
+    {
+      "name": "launch-browser",
+      "protocolProfileBehavior": {
+        "disabledSystemHeaders": {
+          "accept": true
+        }
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8000/api/system/launch-browser",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "system",
+            "launch-browser"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "200-success",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/system/launch-browser",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "system",
+                "launch-browser"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "42"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"2a-Ixbl8cx5vlzTfFx1m8Ojed1y51g\""
+            },
+            {
+              "key": "Date",
+              "value": "Tue, 24 Feb 2026 17:23:33 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"message\": \"Chrome launched successfully\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "connect-browser",
+      "protocolProfileBehavior": {
+        "disabledSystemHeaders": {
+          "accept": true
+        }
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8000/api/system/connect-browser",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "system",
+            "connect-browser"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "200-success",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/system/connect-browser",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "system",
+                "connect-browser"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "28"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"1c-vcaiP2IwvUZQhyeXv39Hdk70kAs\""
+            },
+            {
+              "key": "Date",
+              "value": "Tue, 24 Feb 2026 17:23:47 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"connected\": true,\n    \"pages\": 4\n}"
+        }
+      ]
+    },
+    {
+      "name": "browser-status",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8000/api/system/browser-status",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "system",
+            "browser-status"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "200-success-login",
+          "originalRequest": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/system/browser-status",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "system",
+                "browser-status"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "137"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"89-PmKfKs52C2PfPfuIgycQ+QHidmM\""
+            },
+            {
+              "key": "Date",
+              "value": "Tue, 24 Feb 2026 17:31:19 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"browserConnected\": true,\n    \"linkedInDetected\": true,\n    \"loggedIn\": false,\n    \"reason\": \"On login page\",\n    \"currentUrl\": \"https://www.linkedin.com/login\"\n}"
+        },
+        {
+          "name": "200-success-logged-in",
+          "originalRequest": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/system/browser-status",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "system",
+                "browser-status"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "140"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"8c-jnjiEMduWnY/RZHwu2FYhLtncPY\""
+            },
+            {
+              "key": "Date",
+              "value": "Tue, 24 Feb 2026 17:42:18 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"browserConnected\": true,\n    \"linkedInDetected\": true,\n    \"loggedIn\": true,\n    \"reason\": \"Feed URL detected\",\n    \"currentUrl\": \"https://www.linkedin.com/feed/\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "ensure-linkedin-ready",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8000/api/system/ensure-linkedin-ready",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "system",
+            "ensure-linkedin-ready"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "200-success",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8000/api/system/ensure-linkedin-ready",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "system",
+                "ensure-linkedin-ready"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "60"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"3c-azPcTKl9A2JAbfTcBnXOuzkW2CQ\""
+            },
+            {
+              "key": "Date",
+              "value": "Tue, 24 Feb 2026 18:05:25 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"ready\": true,\n    \"message\": \"LinkedIn is ready for automation.\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "test-navigation",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8000/api/system/test-navigation",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "system",
+            "test-navigation"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "search",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"intent\": \"people\",\r\n  \"keyword\": \"software engineer mumbai\",\r\n   \"maxPages\": 2\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8000/api/system/search",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "system",
+            "search"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "200-success-people",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"intent\": \"people\",\r\n  \"keyword\": \"software engineer mumbai\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8000/api/system/search",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "system",
+                "search"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "145"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"91-zmaolKhec+VZeAw20F9uCyy43U4\""
+            },
+            {
+              "key": "Date",
+              "value": "Tue, 24 Feb 2026 18:28:38 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": true,\n    \"currentUrl\": \"https://www.linkedin.com/search/results/people/?keywords=software%20engineer%20mumbai\",\n    \"title\": \"Search | LinkedIn\"\n}"
+        },
+        {
+          "name": "200-success-companies",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"intent\": \"companies\",\r\n  \"keyword\": \"fintech india\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8000/api/system/search",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "system",
+                "search"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "135"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"87-JFcvN9kQuqskEjkVSA+Kdj0JSAA\""
+            },
+            {
+              "key": "Date",
+              "value": "Tue, 24 Feb 2026 18:29:43 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": true,\n    \"currentUrl\": \"https://www.linkedin.com/search/results/companies/?keywords=fintech%20india\",\n    \"title\": \"Search | LinkedIn\"\n}"
+        },
+        {
+          "name": "200-success-people-v2",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"intent\": \"people\",\r\n  \"keyword\": \"software engineer mumbai\",\r\n   \"maxPages\": 2\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8000/api/system/search",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8000",
+              "path": [
+                "api",
+                "system",
+                "search"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "5294"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"14ae-DPcyD5Upi+WQK7fAdVa296gExPc\""
+            },
+            {
+              "key": "Date",
+              "value": "Tue, 24 Feb 2026 22:30:51 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": true,\n    \"intent\": \"people\",\n    \"totalExtracted\": 20,\n    \"pagesScraped\": 2,\n    \"leads\": [\n        {\n            \"name\": \"Atharv Shiravdekar\",\n            \"profileUrl\": \"https://www.linkedin.com/in/atharv-shiravdekar-b64813285?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAEVam7wBCBXlkc7pcCH7L3zDJGPR0Y8jJxY\",\n            \"role\": \"Just a Software Engineer\",\n            \"location\": \"Mumbai\"\n        },\n        {\n            \"name\": \"Sagar Parande\",\n            \"profileUrl\": \"https://www.linkedin.com/in/sagar-parande-a6b306251?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAD4o4nMB7Ur6xjsY2oZ_g47MDwy1scE8CxQ\",\n            \"role\": \"Software Engineer at Go Digital Technology, MUMBAI\",\n            \"location\": \"Mumbai\"\n        },\n        {\n            \"name\": \"Sahil Jobanputra\",\n            \"profileUrl\": \"https://www.linkedin.com/in/sahil-jobanputra-699217160?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACZ5nBUB3lT_coh_zRYMa2beiUp57ZxSJrU\",\n            \"role\": \"Software Engineer at Amazon | SPIT, Mumbai\",\n            \"location\": \"Mumbai\"\n        },\n        {\n            \"name\": \"Ricketa Baptista\",\n            \"profileUrl\": \"https://www.linkedin.com/in/ricketa-baptista-643552170?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACio4hMB4qhnqJpLHJ1y6A6qAvSYHmdSebQ\",\n            \"role\": \"Software Engineer | Python | GenAI | Mumbai, Maharashtra |\",\n            \"location\": \"Mumbai\"\n        },\n        {\n            \"name\": \"Mayank Raj\",\n            \"profileUrl\": \"https://www.linkedin.com/in/mayankraj05?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAESxzaUB1r3d9b3RoG2cXIyIbPH2_wkRCVM\",\n            \"role\": \"Cadet Pilot @IndiGo | Software Engineer | University of Mumbai’24\",\n            \"location\": \"Navi Mumbai\"\n        },\n        {\n            \"name\": \"SAMEER TUNGAR\",\n            \"profileUrl\": \"https://www.linkedin.com/in/sameertungar?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACYJ2psBaihLqF0DtKnDku1ylcNt2W356to\",\n            \"role\": \"Software Engineer | MorningStar | Mumbai\",\n            \"location\": \"Mumbai\"\n        },\n        {\n            \"name\": \"Aman Pal\",\n            \"profileUrl\": \"https://www.linkedin.com/in/aman-pal-809803251?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAD47yMkBsqikxDHKtOkfaIfhBIJtzSvYblU\",\n            \"role\": \"Software Engineer | .NET Developer at CMSS | Mumbai\",\n            \"location\": \"Mumbai\"\n        },\n        {\n            \"name\": \"Sahil Jadhav\",\n            \"profileUrl\": \"https://www.linkedin.com/in/sahil-jadhav-1b9494275?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAEMrNR0BER7AwE_xBpE0_-lAtmW2s9C9d1o\",\n            \"role\": \"Computer Engineer Mumbai University Software Engineer\",\n            \"location\": \"Mumbai\"\n        },\n        {\n            \"name\": \"Hammad Bhoira\",\n            \"profileUrl\": \"https://www.linkedin.com/in/hmdbhoira?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACQRH9kBKVSSlaTGINYTmHlgx1QJt-9FD9E\",\n            \"role\": \"Senior Software Engineer (Full Stack) at Fastr, Mumbai (Remote)\",\n            \"location\": \"Mumbai\"\n        },\n        {\n            \"name\": \"Chaman Singh\",\n            \"profileUrl\": \"https://www.linkedin.com/in/chaman-singh-870187252?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAD5RaBQBY8_2wR75TD-kKQ82qj95_0tLktQ\",\n            \"role\": \"Software Engineer at bizmatics India pvt ltd, Mumbai\",\n            \"location\": \"Mumbai\"\n        },\n        {\n            \"name\": \"Sharmeen Khan\",\n            \"profileUrl\": \"https://www.linkedin.com/in/sharmeen-khan11?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAEZ2z2gBFIF5zY0gcAzcD51f9NsWA1v9i8k\",\n            \"role\": \"Software Engineer | JAVA | Springboot | Python | React | Final Year CSE Student\",\n            \"location\": \"Navi Mumbai\"\n        },\n        {\n            \"name\": \"Rahul Yadav\",\n            \"profileUrl\": \"https://www.linkedin.com/in/rahul-yadav-796b8118b?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACzYhyIBHKSshPoo32fQFLSCimTYY5WSUa8\",\n            \"role\": \"Student at Mumbai University Mumbai\",\n            \"location\": \"Mumbai Metropolitan Region\"\n        },\n        {\n            \"name\": \"Ashish Chopda\",\n            \"profileUrl\": \"https://www.linkedin.com/in/ashish-chopda-151657201?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADOIHQ0Bcswl4OZZWhJCLe096EHh4pXM-x8\",\n            \"role\": \"Software Engineer Java developer at Nividious software solutions, Mumbai\",\n            \"location\": \"Bhiwandi\"\n        },\n        {\n            \"name\": \"Swaraj Bhalerao\",\n            \"profileUrl\": \"https://www.linkedin.com/in/swaraj-bhalerao-2744681ba?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADL4LXgBB7Ag3LOuCqCY7DWv-on3JUfduRE\",\n            \"role\": \"Student at University of Mumbai\",\n            \"location\": \"Kalyan\"\n        },\n        {\n            \"name\": \"Avdhut Salaskar\",\n            \"profileUrl\": \"https://www.linkedin.com/in/avdhut-salaskar-07134a246?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADzrS9UBnmr3cBi7bxu-003fYAeeYtkS1ZQ\",\n            \"role\": \"Student at University of Mumbai\",\n            \"location\": \"Navi Mumbai\"\n        },\n        {\n            \"name\": \"Rukshar Khan\",\n            \"profileUrl\": \"https://www.linkedin.com/in/rukshar-khan-89670722a?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADlp6DIBhfJDHnGBPZ6vSTCmH9oiMSF3_KM\",\n            \"role\": \"SDE 1 @ JPMC || Former Summer Intern @ JPMC || Code For Good'22 Finalist || Student at Thadomal Shahani Engineering College 32nd Road TPS III Bandra Mumbai 400 050\",\n            \"location\": \"Mumbai\"\n        },\n        {\n            \"name\": \"Prerna Mishra\",\n            \"profileUrl\": \"https://www.linkedin.com/in/prerna-mishra11?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAESAtWcBsNS-wuOvrTCbs9TErWEcyDHRLxc\",\n            \"role\": \"Software Engineer | .NET Developer | ASP.NET MVC | C# | SQL | Angular.JS | React.Js\",\n            \"location\": \"Mumbai\"\n        },\n        {\n            \"name\": \"JUSTIN RODRIGUES\",\n            \"profileUrl\": \"https://www.linkedin.com/in/justin-rodrigues-9887491a3?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAC-hSjgB2t8C4dMTlsvK44SZk7ss3X3thjo\",\n            \"role\": \"Student at University of Mumbai\",\n            \"location\": \"Mumbai\"\n        },\n        {\n            \"name\": \"Sujit Kirve\",\n            \"profileUrl\": \"https://www.linkedin.com/in/sujit-kirve-1140a7241?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADv96eABM3Gsef2x2cj_zReDtNr86hyaRtk\",\n            \"role\": \"software developer at EPCPROMAN pvt.ltd\",\n            \"location\": \"Mumbai\"\n        },\n        {\n            \"name\": \"Ayush shrivastav\",\n            \"profileUrl\": \"https://www.linkedin.com/in/ayushshrivastav29?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAADHx_RABS84_YISnnSYB7ixwnbELws3aeJ0\",\n            \"role\": \"Senior Software Engineer @ Capgemini | University of Mumbai\",\n            \"location\": \"Mumbai\"\n        }\n    ]\n}"
+        }
+      ]
+    },
+    {
+      "name": "debug-dump",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/api/debug/dump",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "api",
+            "debug",
+            "dump"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
